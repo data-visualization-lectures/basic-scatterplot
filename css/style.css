@@ -1,0 +1,120 @@
+body {
+  font: 12px Arial;
+  color: #000;
+}
+
+path { 
+  stroke: #666;
+  stroke-width: 1;
+  fill: none;
+}
+    
+#container {
+	width: 914px;
+	height: 400px;
+	margin: 0 auto;	
+}
+
+#blockChart {
+	width: 784px;
+	height: 400px;
+	float: left;
+}
+
+#blockNav {
+	width: 130px;
+	height: 400px;
+	float: left;
+	background-color: #FFF;
+}
+
+#chart {
+	width: 784px;
+	height: 400px;
+	background-color: #FFF;
+}
+
+.menu-block {
+	width: 130px;
+	min-height: 80px;
+	display: block;
+}
+
+#blockNav h4 {
+	width: 126px;
+	font-size: 12px;
+	background-color: #333;
+	color: #FFF;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-left: 4px;
+}
+
+#blockNav ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	clear: both;
+}
+
+#blockNav li {
+	float: left;
+	margin-right: 10px;
+	list-style-type: none;
+}
+
+#blockNav li:focus, 
+#blockNav li:active, 
+#blockNav li:hover {
+	font-weight: bold; 
+	color: #F00;
+}
+
+
+.selected {
+	font-weight: bold; 
+	color: #F00;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.grid-line {
+  stroke: #CCC;
+  stroke-width: 0.4;
+}
