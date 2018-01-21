@@ -19,12 +19,12 @@ var margin = {top: 40, right: 40, bottom: 40, left: 40},
       g_width =  _width - margin.left - margin.right,
       g_height = _height - margin.top - margin.bottom;
 
-var svgContainer = d3.select('#chart').append('svg')
-    .attr('width', _width)
-    .attr('height', _height);
+var svgContainer = d3.select("#chart").append("svg")
+    .attr("width", _width)
+    .attr("height", _height);
 
 var axisContainer = svgContainer.append("g")
-    .attr("class", "x-axis")
+    .attr("class", "axis")
     .attr("transform", "translate(0, 0)");
 
 var chartContainer = svgContainer.append("g")
@@ -34,7 +34,7 @@ var chartContainer = svgContainer.append("g")
 
 
 /* ------------------------------
-  初期設定：スケール＆軸
+  初期設定：スケール
 ------------------------------ */
 
 var xScale = d3.scale.linear()
@@ -42,6 +42,12 @@ var xScale = d3.scale.linear()
 
 var yScale = d3.scale.linear()
     .range([g_height + margin.top, margin.top]);
+
+
+
+/* ------------------------------
+  初期設定：軸
+------------------------------ */
 
 var xAxis = d3.svg.axis()
     .scale(xScale)
